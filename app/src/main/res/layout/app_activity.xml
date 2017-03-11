@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ru.maseymail.mosiychuk_aleksandr_grid3x4.Main2Activity"
+    tools:context="ru.maseymail.mosiychuk_aleksandr_grid3x4.AppActivity"
     android:background="@color/colorPrimary">
 
     <TextView

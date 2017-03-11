@@ -5,54 +5,47 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private View app;
-    private View trubka;
-    private View sms;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button appActivity;
+    private Button dialerActivity;
+    private Button smsActivity;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sendSms();
-        dialler();
-        getApp();
 
-    }
+        appActivity = (Button) findViewById(R.id.App);
+        dialerActivity = (Button) findViewById(R.id.dialer);
+        smsActivity = (Button) findViewById(R.id.sms);
 
-    public void getApp() {
-        app = findViewById(R.id.App);
-        app.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(intent);
-            }
-        });
-
-    }
-
-    public void dialler() {
-        trubka = findViewById(R.id.trubka);
-        trubka.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                startActivity(intent);
-            }
-        });
+        appActivity.setOnClickListener(this);
+        dialerActivity.setOnClickListener(this);
+        smsActivity.setOnClickListener(this);
     }
 
 
-    public void sendSms() {
-        sms = findViewById(R.id.sms);
-        sms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + ""));
-                startActivity(intent);
-            }
-        });
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.App:
+                intent = new Intent(MainActivity.this, AppActivity.class);
+                break;
+            case R.id.dialer:
+                intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+"1234"));
+                break;
+            case R.id.sms:
+                intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:" + "1234"));
+                break;
+        }
+        startActivity(intent);
     }
+
 }
+
+
+
+

@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_weight="10"
+    android:orientation="vertical"
     tools:context="ru.maseymail.mosiychuk_aleksandr_grid3x4.MainActivity">
 
 
@@ -19,41 +19,11 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
         </TableRow>
 
         <TableRow
@@ -61,41 +31,11 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
         </TableRow>
 
         <TableRow
@@ -103,41 +43,11 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
         </TableRow>
 
         <TableRow
@@ -145,58 +55,27 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/margin_TextView"
-                android:layout_marginLeft="@dimen/margin_TextView"
-                android:layout_marginRight="@dimen/margin_TextView"
-                android:layout_marginTop="@dimen/margin_TextView"
-                android:layout_weight="1"
-                android:background="@color/colorBackgroundTextview"
-                android:gravity="center"
-                android:text="@string/textView" />
+            <TextView style="@style/TextStyle" />
         </TableRow>
     </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/colorBackgroundDown"
-        >android:layout_weight="1"
+        android:orientation="horizontal">android:layout_weight="1"
 
         <Button
-            android:id="@+id/trubka"
+            android:id="@+id/dialer"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="40dp"
-            android:drawableLeft="@mipmap/trubkal"/>
+            android:drawableLeft="@mipmap/trubkal"
+            android:paddingLeft="40dp" />
 
         <Button
             android:id="@+id/App"
@@ -210,8 +89,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingRight="40dp"
-            android:drawableRight="@mipmap/sms" />
+            android:drawableRight="@mipmap/sms"
+            android:paddingRight="40dp" />
     </LinearLayout>
 
 </LinearLayout>
