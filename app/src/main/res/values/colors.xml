@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackgroundTextview">#AAAAAA</color>
     <color name="colorBackgroundDown">#000</color>
+    <color name="colorWhite">#fff</color>
 </resources>
