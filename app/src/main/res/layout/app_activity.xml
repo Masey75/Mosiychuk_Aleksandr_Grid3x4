@@ -6,15 +6,21 @@
     tools:context=".AppActivity"
     android:id="@+id/relativelayout"
     android:padding="@dimen/margin_TextView"
-
    >
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view1"
         android:layout_width="match_parent"
+        android:paddingTop="@dimen/side_icon"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:background="@color/colorWhite"        >
+        android:background="@color/colorWhite">
     </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/side_icon"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
 </RelativeLayout>

@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="margin_TextView">5dp</dimen>
     <dimen name="side_icon">60dp</dimen>
+    <dimen name="zero">0dp</dimen>
 </resources>
