@@ -9,7 +9,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.widget.EditText;
 
 import java.util.List;
@@ -40,8 +39,6 @@ public class AppActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(recyclerViewLayoutManager);
         adapter = new AppViewAdapter(pm, packages);
         recyclerView.setAdapter(adapter);
-
-
     }
 
     TextWatcher textWatcher = new TextWatcher() {
@@ -58,9 +55,6 @@ public class AppActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable s) {
             adapter.getFilter().filter(s.toString());
-
-            Log.i("my", editText.getText().toString());
-
         }
     };
 }
