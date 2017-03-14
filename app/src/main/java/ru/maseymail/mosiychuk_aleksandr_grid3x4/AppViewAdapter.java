@@ -1,9 +1,9 @@
 package ru.maseymail.mosiychuk_aleksandr_grid3x4;
 
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,13 +26,11 @@ public class AppViewAdapter extends RecyclerView.Adapter<AppViewAdapter.ViewHold
         this.pm = pm;
         this.packages = packages;
         this.filtrPackages = packages;
-
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView text;
         public ImageView image;
-
 
         public ViewHolder(View v) {
             super(v);
@@ -43,6 +41,7 @@ public class AppViewAdapter extends RecyclerView.Adapter<AppViewAdapter.ViewHold
 
     @Override
     public AppViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.app_view_items, parent, false);
         ViewHolder vh = new ViewHolder(v);
@@ -50,11 +49,21 @@ public class AppViewAdapter extends RecyclerView.Adapter<AppViewAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(AppViewAdapter.ViewHolder holder, int position) {
-        ApplicationInfo app = filtrPackages.get(position);
+    public void onBindViewHolder(final AppViewAdapter.ViewHolder holder, int position) {
+        final ApplicationInfo app = filtrPackages.get(position);
 
         holder.text.setText(app.loadLabel(pm).toString());
         holder.image.setImageDrawable(app.loadIcon(pm));
+
+
+        holder.itemView.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goActivity = holder.itemView.getContext().getPackageManager().getLaunchIntentForPackage(app.packageName);
+                holder.itemView.getContext().startActivity(goActivity);
+            }
+        });
     }
 
     @Override
